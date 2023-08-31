@@ -1,0 +1,48 @@
+.logo {
+  margin: 0;
+  padding: 0;
+  width: 20%;
+}
+
+.navBar {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navBarNavigations {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 4%;
+  width: 30%;
+}
+
+.navBarTitle {
+  width: 70%;
+  margin-top: 1.6%;
+  margin-left: 4%;
+}
+
+.navigateTo {
+  color: #000;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: 115%;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.switchThemeIcon {
+  margin: 0;
+  padding: 0;
+  width: 6%;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,14 @@
+.spacer{
+    margin-top: 25px;
+}
+
+.title {
+  font-family: "Cascadia Code", sans-serif;
+  font-weight: 400;
+  /* font-size: 200%; */
+  margin: 0;
+}
+
+/* .titleDiv {
+  margin: 12%;
+} */
