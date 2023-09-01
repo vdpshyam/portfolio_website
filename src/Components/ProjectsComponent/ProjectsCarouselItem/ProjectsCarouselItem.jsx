@@ -5,7 +5,7 @@ import ProjectsPageSingleProjectCarousel from '../ProjectsPageSingleProjectCarou
 function ProjectsCarouselItem({ project }) {
     return (
         <div className={ProjectsCarouselItemCSS.carouselItemDiv}>
-            <ProjectsPageSingleProjectCarousel project={project} />
+            <ProjectsPageSingleProjectCarousel project={project}/>
         </div>
     );
 }

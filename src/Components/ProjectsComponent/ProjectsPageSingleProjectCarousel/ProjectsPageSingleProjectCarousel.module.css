@@ -1,0 +1,21 @@
+.carouselItemBtn{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.carouselItemDiv{
+    overflow: hidden;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.currentCarouselItemIndicators{
+    display: flex;
+}
+
+.inner{
+    white-space: nowrap;
+    transition: 0.7s;
+}

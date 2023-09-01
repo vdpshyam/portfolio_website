@@ -1,38 +1,90 @@
 import React from 'react';
+import ProjectsCarouselCSS from './ProjectsCarousel.module.css';
 import ProjectsCarouselItem from '../ProjectsCarouselItem/ProjectsCarouselItem';
 
 function ProjectsCarousel() {
 
     const projectsList = [{
+        projectId: 1,
         title: "E-Commerce B2B Mobile Application",
         projectDescription: "Good project",
         techStack: ["Flutter", "NodeJS", "MongoDB"],
         projectImagesAndDesc: [{
-            image: "image1", imageDescription: "image1 description"
+            imageAndDescId: 1,
+            image: "image1 E-Commerce B2B Mobile Application", imageDescription: "image1 description E-Commerce B2B Mobile Application"
         }, {
-            image: "image2", imageDescription: "image2 description"
+            imageAndDescId: 2,
+            image: "image2 E-Commerce B2B Mobile Application", imageDescription: "image2 description E-Commerce B2B Mobile Application"
         }, {
-            image: "image3", imageDescription: "image3 description"
+            imageAndDescId: 3,
+            image: "image3 E-Commerce B2B Mobile Application", imageDescription: "image3 description E-Commerce B2B Mobile Application"
         },],
     }, {
+        projectId: 2,
         title: "Sales Forcasting Services.",
         projectDescription: "Good project",
         techStack: ["Angular", "Flask"],
         projectImagesAndDesc: [{
-            image: "image1", imageDescription: "image1 description"
+            imageAndDescId: 1,
+            image: "image1 Sales Forcasting Services.", imageDescription: "image1 description Sales Forcasting Services."
         }, {
-            image: "image2", imageDescription: "image2 description"
+            imageAndDescId: 2,
+            image: "image2 Sales Forcasting Services.", imageDescription: "image2 description Sales Forcasting Services."
         }, {
-            image: "image3", imageDescription: "image3 description"
+            imageAndDescId: 3,
+            image: "image3 Sales Forcasting Services.", imageDescription: "image3 description Sales Forcasting Services."
         },],
-    },];
+    }, {
+        projectId: 1,
+        title: "wefdsfcsdcsdcsdcsc",
+        projectDescription: "Good project",
+        techStack: ["Flutter", "NodeJS", "MongoDB"],
+        projectImagesAndDesc: [{
+            imageAndDescId: 1,
+            image: "image1 E-Commerce Bsdcsdcs Application", imageDescription: "image1 description E-Commercsdcscspplication"
+        }, {
+            imageAndDescId: 2,
+            image: "image2 E-Commsdcsdcse Application", imageDescription: "image2 description E-Commerce BsdcsdApplication"
+        }, {
+            imageAndDescId: 3,
+            image: "image3 E-Commerce sdcsdication", imageDescription: "image3 description E-Comsdcsdcile Application"
+        },],
+    }];
+
+    const [activeIndex, setActiveIndex] = React.useState(0);
+
+    function updateIndex(newIndex) {
+        if (newIndex < 0) {
+            newIndex = 0;
+        } else if (newIndex >= projectsList.length) {
+            newIndex = projectsList.length - 1;
+        }
+        setActiveIndex(newIndex);
+    }
 
     return (
-        <div>
-            {projectsList.map((project) => {
-                return <ProjectsCarouselItem project = {project} />
-            })}
-
+        <div className={ProjectsCarouselCSS.carouselItemDiv}>
+            <div className={ProjectsCarouselCSS.carouselWrapper}>
+                <div>
+                    <button onClick={() => {
+                        updateIndex(activeIndex - 1);
+                    }}>Previous</button>
+                </div>
+                <div className={ProjectsCarouselCSS.carousel}>
+                    <div className={ProjectsCarouselCSS.slides}>
+                        <div className={ProjectsCarouselCSS.carouselInner} style={{ transform: "translateY(-" + (activeIndex * ((100) / (projectsList.length))) + "%)" }}>
+                            {projectsList.map((project, index) => {
+                                return <ProjectsCarouselItem project={project} key={projectsList[index].projectId} />
+                            })}
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button onClick={() => {
+                        updateIndex(activeIndex + 1);
+                    }}>Next</button>
+                </div>
+            </div>
         </div>
     );
 }
