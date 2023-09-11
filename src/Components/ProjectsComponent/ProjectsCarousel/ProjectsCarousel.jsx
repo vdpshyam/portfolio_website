@@ -1,6 +1,8 @@
 import React from 'react';
 import ProjectsCarouselCSS from './ProjectsCarousel.module.css';
 import ProjectsCarouselItem from '../ProjectsCarouselItem/ProjectsCarouselItem';
+import moveUp from '../../../Assets/Icons/moveup1.png';
+import moveDown from '../../../Assets/Icons/movedown1.png';
 
 function ProjectsCarousel() {
 
@@ -11,13 +13,13 @@ function ProjectsCarousel() {
         techStack: ["Flutter", "NodeJS", "MongoDB"],
         projectImagesAndDesc: [{
             imageAndDescId: 1,
-            image: "image1 E-Commerce B2B Mobile Application", imageDescription: "image1 description E-Commerce B2B Mobile Application"
+            image: "image1 E-Commerce B2B Mobile Application", imageDescTitle: "Login screen", imageDescription: "image1 description E-Commerce B2B Mobile Application"
         }, {
             imageAndDescId: 2,
-            image: "image2 E-Commerce B2B Mobile Application", imageDescription: "image2 description E-Commerce B2B Mobile Application"
+            image: "image2 E-Commerce B2B Mobile Application", imageDescTitle: "Orders screen", imageDescription: "image2 description E-Commerce B2B Mobile Application"
         }, {
             imageAndDescId: 3,
-            image: "image3 E-Commerce B2B Mobile Application", imageDescription: "image3 description E-Commerce B2B Mobile Application"
+            image: "image3 E-Commerce B2B Mobile Application", imageDescTitle: "Search Screen", imageDescription: "image3 description E-Commerce B2B Mobile Application"
         },],
     }, {
         projectId: 2,
@@ -26,13 +28,13 @@ function ProjectsCarousel() {
         techStack: ["Angular", "Flask"],
         projectImagesAndDesc: [{
             imageAndDescId: 1,
-            image: "image1 Sales Forcasting Services.", imageDescription: "image1 description Sales Forcasting Services."
+            image: "image1 Sales Forcasting Services.", imageDescTitle: "Login screen", imageDescription: "image1 description Sales Forcasting Services."
         }, {
             imageAndDescId: 2,
-            image: "image2 Sales Forcasting Services.", imageDescription: "image2 description Sales Forcasting Services."
+            image: "image2 Sales Forcasting Services.", imageDescTitle: "orders screen", imageDescription: "image2 description Sales Forcasting Services."
         }, {
             imageAndDescId: 3,
-            image: "image3 Sales Forcasting Services.", imageDescription: "image3 description Sales Forcasting Services."
+            image: "image3 Sales Forcasting Services.", imageDescTitle: "searcvh screen", imageDescription: "image3 description Sales Forcasting Services."
         },],
     }, {
         projectId: 1,
@@ -66,23 +68,30 @@ function ProjectsCarousel() {
         <div className={ProjectsCarouselCSS.carouselItemDiv}>
             <div className={ProjectsCarouselCSS.carouselWrapper}>
                 <div>
-                    <button onClick={() => {
+                    <button className={ProjectsCarouselCSS.moveUpButton} onClick={() => {
                         updateIndex(activeIndex - 1);
-                    }}>Previous</button>
+                    }}> <img src={moveUp} alt='Move up' className={ProjectsCarouselCSS.moveUpIcon}></img> </button>
                 </div>
-                <div className={ProjectsCarouselCSS.carousel}>
-                    <div className={ProjectsCarouselCSS.slides}>
-                        <div className={ProjectsCarouselCSS.carouselInner} style={{ transform: "translateY(-" + (activeIndex * ((100) / (projectsList.length))) + "%)" }}>
-                            {projectsList.map((project, index) => {
-                                return <ProjectsCarouselItem project={project} key={projectsList[index].projectId} />
-                            })}
+                <div className={ProjectsCarouselCSS.carouselDiv}>
+                    <div className={ProjectsCarouselCSS.carousel}>
+                        <div className={ProjectsCarouselCSS.verticalLine}>
+                            <div className={ProjectsCarouselCSS.projectNumberIndicator}>
+                                {activeIndex + 1}
+                            </div>
+                        </div>
+                        <div className={ProjectsCarouselCSS.slides}>
+                            <div className={ProjectsCarouselCSS.carouselInner} style={{ transform: "translateY(-" + (activeIndex * ((100) / (projectsList.length))) + "%)" }}>
+                                {projectsList.map((project, index) => {
+                                    return <ProjectsCarouselItem project={project} key={projectsList[index].projectId} />
+                                })}
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <button onClick={() => {
+                    <button className={ProjectsCarouselCSS.moveDownButton} onClick={() => {
                         updateIndex(activeIndex + 1);
-                    }}>Next</button>
+                    }}><img src={moveDown} alt='Move down' className={ProjectsCarouselCSS.moveUpIcon}></img></button>
                 </div>
             </div>
         </div>

@@ -1,0 +1,56 @@
+/* Classes */
+.contactPageContainerDiv {
+  margin-left: 12%;
+  margin-top: 10%;
+  margin-bottom: 400px;
+}
+
+.findMeOnContentDiv {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: start;
+  justify-content: space-evenly;
+}
+
+.findMeOnDiv {
+  margin-top: 50px;
+  /* margin-bottom: 50px; */
+  justify-content: space-between;
+}
+
+.getInTouchDiv {
+  margin-top: 50px;
+  /* margin-bottom: 50px; */
+}
+
+.getInTouchContent {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.getInTouchContentDiv {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.subHeadingDiv {
+  font-size: 35px;
+  font-family: "Inter", sans-serif;
+}
+
+/* Tags */
+a {
+  color: #000;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}

@@ -1,0 +1,52 @@
+/* Classes */
+.aboutPageContainerDiv {
+  margin-top: 5%;
+  margin-left: 12%;
+  /* margin-right: 12%; */
+}
+
+.aboutPageContentDiv {
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  margin-left: 5%;
+}
+
+.aboutPageHeadingDiv {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+}
+
+.aboutPageContentSubHeadingDiv {
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  /* margin-left: 5%; */
+}
+
+.aboutPageSubHeadingDiv {
+  font-family: "Inter", sans-serif;
+  font-size: 35px;
+  margin-top: 5%;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.programmingTech {
+  font-family: "Cascadia Code", sans-serif;
+  margin-left: 8px;
+}
+
+/* Tags */
+li {
+  margin: 15px;
+}
+
+ol {
+  list-style-type: none;
+  padding-top: 0;
+  /* margin:0; */
+}
+
+p {
+  margin: 0;
+}
