@@ -4,7 +4,7 @@ import ProjectsPageSingleProjectCarouselItemCSS from './ProjectsPageSingleProjec
 function ProjectsPageSingleProjectCarouselItem({ imageAndDesc }) {
     return (
         <div className={ProjectsPageSingleProjectCarouselItemCSS.carouselItemDiv}>
-            <p>{imageAndDesc["image"]}</p>
+            <img src={imageAndDesc["image"]} alt='Project Snapshot'></img>
             <p>{imageAndDesc["imageDescTitle"]}</p>
             <p>{imageAndDesc["imageDescription"]}</p>
         </div>

@@ -1,4 +1,4 @@
-.carouselItemBtn{
+/* .carouselItemBtn{
     display: flex;
     justify-content: space-evenly;
 }
@@ -12,13 +12,13 @@
     padding: 25px 0;
     max-width: 1000px;
     /* width: 900px; */
-}
+/* } */
 
-.currentCarouselItemIndicators{
+/* .currentCarouselItemIndicators{
     display: flex;
 }
 
 .inner{
     white-space: nowrap;
     transition: 0.7s;
-}
+} */
