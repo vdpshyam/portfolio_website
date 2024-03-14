@@ -9,11 +9,14 @@ function ContactPage() {
                     Find me on:
                 </p>
                 <div className={ContactPageCSS.findMeOnContentDiv}>
-                    <a href='/'>
+                    <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/v-d-p-shyam-9b6ba3162/'> <p className={ContactPageCSS.linkedIn}>
                         LinkedIn
+                    </p>
                     </a>
-                    <a href='/'>
-                        GitHub
+                    <a className={ContactPageCSS.gitHub} target="_blank" rel="noreferrer" href='https://github.com/vdpshyam'>
+                        <p className={ContactPageCSS.gitHub}>
+                            GitHub
+                        </p>
                     </a>
                 </div>
             </div>
@@ -23,7 +26,7 @@ function ContactPage() {
                 </p>
                 <div className={ContactPageCSS.getInTouchContentDiv}>
                     <p className={ContactPageCSS.getInTouchContent}>
-                        Email: vdpshyam@gmail.com
+                        Email: <span className={ContactPageCSS.email}>vdpshyam@gmail.com </span>
                     </p>
                     <p className={ContactPageCSS.getInTouchContent}>
                         You can mail me with the subject as work, and I will get back to you ASAP.

@@ -1,14 +1,18 @@
 import React from 'react';
 import NavBarCSS from './NavBar.module.css'
 import switchThemeIcon from '../../Assets/Images/switchThemeIcon.png';
-import logo from '../../Assets/Images/logo3.png';
+import logo from '../../Assets/Images/logo4.png';
 
 // const image = '../../Assets/Images/switchThemeIcon.png';
 
-function NavBar() {
+function NavBar({ handleNavBarClicksFunc }) {
 
     function onLogoClick() {
         window.location.reload();
+    }
+
+    function onNavClick(sectionId) {
+        handleNavBarClicksFunc(sectionId);
     }
 
     return (
@@ -19,9 +23,9 @@ function NavBar() {
                 </div>
                 <div className={NavBarCSS.navBarNavigations}>
                     <img src={switchThemeIcon} alt="" className={NavBarCSS.switchThemeIcon} />
-                    <a href='/' className={NavBarCSS.navigateTo}>Projects</a>
-                    <a href='/' className={NavBarCSS.navigateTo}>About</a>
-                    <a href='/' className={NavBarCSS.navigateTo}>Contact</a>
+                    <button className={NavBarCSS.navigateTo} onClick={() => onNavClick('projectsPageDiv')}>Projects</button>
+                    <button className={NavBarCSS.navigateTo} onClick={() => onNavClick('aboutPageDiv')}>About</button>
+                    <button className={NavBarCSS.navigateTo} onClick={() => onNavClick('contactPageDiv')}>Contact</button>
                 </div>
             </div>
         </div>

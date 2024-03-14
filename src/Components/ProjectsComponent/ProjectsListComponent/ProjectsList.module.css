@@ -16,23 +16,29 @@
   /* width: 900px; */
 }
 
-.carouselItemNavBtnPrev,.carouselItemNavBtnNext {
+.carouselItemNavBtnPrev,
+.carouselItemNavBtnNext {
   align-items: center;
-  background-color: transparent;
+  background-color: rgb(0, 0, 0);
   border-style: none;
   border-radius: 50px;
   cursor: pointer;
   justify-content: center;
   /* margin-top: 6px; */
-  /* height: 31px; */
-  /* width: fit-content; */
+  height: 30px;
+  width: fit-content;
   padding: 0;
 }
 
+.carouselItemNavBtnNextIcon,
+.carouselItemNavBtnPrevIcon {
+  height: 30px;
+  width: 30px;
+}
+
 .carouselItemNavBtnPrev :hover {
-  color: rgba(0, 0, 0, 0.207);
-  background-color: rgba(255, 249, 249, 0.207);
-  border-radius: 50px;
+  background-color: rgba(128, 128, 128, 0.603);
+  border-radius: 500px;
   margin-top: 0;
   width: fit-content;
   transition: all 0.2s;
@@ -40,9 +46,8 @@
 }
 
 .carouselItemNavBtnNext :hover {
-  color: rgba(0, 0, 0, 0.207);
-  background-color: rgba(128, 128, 128, 0.238);
-  border-radius: 50px;
+  background-color: rgba(128, 128, 128, 0.603);
+  border-radius: 30px;
   margin-top: 0;
   width: fit-content;
   transition: all 0.2s;
@@ -60,7 +65,7 @@
 }
 
 .carouselItemSlideDiv {
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   border-style: none;
   border-width: 0;
   display: inline-flex;
@@ -105,14 +110,26 @@
 } */
 
 .currentCarouselItemIndicatorsBtn {
-  background-color: transparent;
+  background-color: rgba(128, 128, 128, 0);
+  border-radius: 30px;
   border-style: none;
+  color: #ffffff;
   cursor: pointer;
   font-size: 15px;
   height: 30px;
+  margin: 0 4px;
   width: 30px;
   padding: 5px;
 }
+
+/* .currentCarouselItemIndicatorsBtn :hover {
+  background-color: rgb(128, 128, 128);
+  border-radius: 30px;
+  border-style: none;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+} */
 
 .currentCarouselItemIndicatorsBtnActive {
   background-color: rgb(56, 56, 255);
@@ -122,6 +139,7 @@
   color: white;
   font-size: 15px;
   height: 30px;
+  margin: 0 4px;
   width: 30px;
   padding: 5px;
 }
@@ -161,9 +179,10 @@
 }
 
 .projectNumberIndicator {
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   border: 2px solid;
   border-radius: 100%;
+  color: #ffffff;
   font-size: 19px;
   font-weight: 800;
   height: 20px;
@@ -175,7 +194,14 @@
   text-align: center;
 }
 
+.projectTechStackCategory {
+  color: #7cb9e8;
+  font-size: 23px;
+  font-weight: 600;
+}
+
 .projectTechStackTitle {
+  color: #7cb9e8;
   font-size: 23px;
   font-weight: 600;
   margin-left: 25px;
@@ -189,8 +215,10 @@
 }
 
 .projectTitle {
+  color: #0cafff;
   font-size: 35px;
   font-weight: 600;
+  font-family: "Istok Web", sans-serif;
 }
 
 .singleProjectDiv {
@@ -201,6 +229,6 @@
   display: flex;
   margin-top: 0;
   margin-left: 17px;
-  border-left: 2px solid grey;
-  height: 1110px;
+  border-left: 1px solid rgb(255, 255, 255);
+  height: 1134px;
 }

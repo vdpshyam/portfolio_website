@@ -3,8 +3,8 @@ import ProjectsListCSS from './ProjectsList.module.css';
 // import ProjectsPageSingleProjectCarousel from '../ProjectsPageSingleProjectCarousel/ProjectsPageSingleProjectCarousel';
 // import ProjectsPageSingleProjectCarouselCSS from './ProjectsPageSingleProjectCarousel.module.css';
 // import ProjectsPageSingleProjectCarouselItem from '../ProjectsPageSingleProjectCarouselItem/ProjectsPageSingleProjectCarouselItem';
-import MoveLeftIcon from '../../../Assets/Icons/moveleft1.png';
-import MoveRightIcon from '../../../Assets/Icons/moveright1.png';
+import MoveLeftIcon from '../../../Assets/Icons/moveleft3.png';
+import MoveRightIcon from '../../../Assets/Icons/moveright3.png';
 
 import P1n1dashboard1 from '../../../Assets/Images/Projects/ECommerce/P1n1dashboard1.png';
 import P1n2dashboard1 from '../../../Assets/Images/Projects/ECommerce/P1n2dashboard1.png';
@@ -34,82 +34,82 @@ function ProjectsList() {
             <div>
                 <p style={{ margin: 0 }}>This app has two types of users:</p>
                 <ol style={{ margin: 0 }}>
-                    <li style={{ margin: 0 }}> <b>Seller: </b> Farmer who lists his cultivated product.</li>
-                    <li style={{ margin: 0 }}> <b>Buyer: </b> Wholesaler who buys the products from farmers.</li>
+                    <li style={{ margin: 0 }}> <p> <b>Seller: </b> Farmer who lists his cultivated product.  </p></li>
+                    <li style={{ margin: 0 }}> <p><b>Buyer: </b> Wholesaler who buys the products from farmers. </p></li>
                 </ol>
             </div>,
         techStack: <div>
             <table>
                 <tbody>
                     <tr>
-                        <td><b>Frontend </b></td>
-                        <td>:</td>
-                        <td style={{ fontFamily: "Cascadia Code" }}>Flutter</td>
+                        <td> <p className={ProjectsListCSS.projectTechStackCategory}>Frontend</p></td>
+                        <td><p className={ProjectsListCSS.projectTechStackCategory}>:</p></td>
+                        <td style={{ fontFamily: "Cascadia Code" }}><p>Flutter</p></td>
                     </tr>
                     <tr>
-                        <td><b>Backend</b></td>
-                        <td>:</td>
-                        <td style={{ fontFamily: "Cascadia Code" }}>NodeJS</td>
+                        <td><p className={ProjectsListCSS.projectTechStackCategory}>Backend</p></td>
+                        <td><p className={ProjectsListCSS.projectTechStackCategory}>:</p></td>
+                        <td style={{ fontFamily: "Cascadia Code" }}><p>NodeJS</p></td>
                     </tr>
                     <tr>
-                        <td><b>Database </b></td>
-                        <td>:</td>
-                        <td style={{ fontFamily: "Cascadia Code" }}>MongoDB</td>
+                        <td><p className={ProjectsListCSS.projectTechStackCategory}>Database </p></td>
+                        <td><p className={ProjectsListCSS.projectTechStackCategory}>:</p></td>
+                        <td style={{ fontFamily: "Cascadia Code" }}><p>MongoDB</p></td>
                     </tr>
                 </tbody>
             </table>
         </div>,
         projectImagesAndDesc: [{
             imageAndDescId: 1,
-            image: P1n1dashboard1, imageDescTitle: "New user dasboard", imageDescription: "Common for both types of users, with minor changes. This shows summary of the sales made, etc. This screen is shown when the user is new."
+            image: P1n1dashboard1, imageDescTitle: "New user dasboard", imageDescription: "This shows summary of the sales made, etc. This screen is shown when the user is new. Common for both types of users, with minor changes. "
         }, {
             imageAndDescId: 2,
-            image: P1n2dashboard1, imageDescTitle: "User dasboard", imageDescription: "Common for both types of users, with minor changes. This shows summary of the sales made, etc."
+            image: P1n2dashboard1, imageDescTitle: "User dasboard", imageDescription: "This shows summary of the sales made, etc. Common for both types of users, with minor changes."
         }, {
             imageAndDescId: 3,
-            image: P1n3search1, imageDescTitle: "Search Screen", imageDescription: "Buyer specific. For searching the products."
+            image: P1n3search1, imageDescTitle: "Search Screen", imageDescription: "For searching the products. Buyer specific. "
         }, {
             imageAndDescId: 4,
-            image: P1n4filters1, imageDescTitle: "Sort and filter options in search page", imageDescription: "Buyer specific. For filtering the products found in the search results."
+            image: P1n4filters1, imageDescTitle: "Sort and filter options in search page", imageDescription: "For filtering the products found in the search results. Buyer specific. "
         }, {
             imageAndDescId: 5,
-            image: P1n5orders, imageDescTitle: "Orders screen", imageDescription: "Common for both users, with minor changes.Shows the orders categorized by their porgress."
+            image: P1n5orders, imageDescTitle: "Orders screen", imageDescription: "Shows the orders categorized by their porgress. Common for both users, with minor changes."
         }, {
             imageAndDescId: 6,
-            image: P1n6fav1, imageDescTitle: "Favourites screen", imageDescription: "Buyer specific. Shows the favorite products for the buyer."
+            image: P1n6fav1, imageDescTitle: "Favourites screen", imageDescription: "Shows the favorite products for the buyer. Buyer specific. "
         },
         {
             imageAndDescId: 7,
-            image: P1n7profset1, imageDescTitle: "Profile settings", imageDescription: "Common for both users.Shows the specific user details and also allows them to edit them."
+            image: P1n7profset1, imageDescTitle: "Profile settings", imageDescription: "Shows the specific user details and also allows them to edit them. Common for both users."
         },
         {
             imageAndDescId: 8,
-            image: P1n8proddet1, imageDescTitle: "Product details screen", imageDescription: "Common for both users, with minor changes.Shows the details of a product. The seller could also edit the details of the product."
+            image: P1n8proddet1, imageDescTitle: "Product details screen", imageDescription: "Shows the details of a product. The seller could also edit the details of the product. Common for both users, with minor changes."
         },
         {
             imageAndDescId: 9,
-            image: P1n9listeditems, imageDescTitle: "Listed Items page", imageDescription: "Seller specific. Shows the products listed by the seller."
+            image: P1n9listeditems, imageDescTitle: "Listed Items page", imageDescription: "Shows the products listed by the seller. Seller specific."
         },
         {
             imageAndDescId: 10,
-            image: P1n10reviews, imageDescTitle: "Personal reviews screen", imageDescription: "Common for both users. Shows the reviews posted for a user and also the reviews posted by the user. The user could also reply to the reviews posted for him/her and could also delete the reviews posted by him/her."
+            image: P1n10reviews, imageDescTitle: "Personal reviews screen", imageDescription: "Shows the reviews posted for a user and also the reviews posted by the user. The user could also reply to the reviews posted for him/her and could also delete the reviews posted by him/her. Common for both users."
         },],
     }, {
         projectId: 2,
         title: "Sales Forcasting Services.",
-        projectDescription: "This is a web app for predicting the sales for any company. The Machine Learning algorithm used here is SARIMA, which stands for Seasonal AutoRegressive Integrated Moving Average. It is an extension of ARIMA that can account for seasonal patterns in the data.",
+        projectDescription: <p> This is a web app for predicting the sales for any company. The Machine Learning algorithm used here is SARIMA, which stands for Seasonal AutoRegressive Integrated Moving Average. It is an extension of ARIMA that can account for seasonal patterns in the data.</p>,
         techStack: <div>
             <table>
                 <tbody>
                     <tr>
-                        <td><b>Frontend </b></td>
-                        <td>:</td>
-                        <td style={{ fontFamily: "Cascadia Code" }}>Angular</td>
+                        <td> <p className={ProjectsListCSS.projectTechStackCategory}>Frontend</p></td>
+                        <td><p className={ProjectsListCSS.projectTechStackCategory}>:</p></td>
+                        <td style={{ fontFamily: "Cascadia Code" }}><p>Angular</p></td>
                     </tr>
                     <tr>
-                        <td><b>Backend</b></td>
-                        <td>:</td>
-                        <td style={{ fontFamily: "Cascadia Code" }}>Flask</td>
+                        <td><p className={ProjectsListCSS.projectTechStackCategory}>Backend</p></td>
+                        <td><p className={ProjectsListCSS.projectTechStackCategory}>:</p></td>
+                        <td style={{ fontFamily: "Cascadia Code" }}><p>Flask</p></td>
                     </tr>
                 </tbody>
             </table>
@@ -119,14 +119,14 @@ function ProjectsList() {
             image: P2n1login1, imageDescTitle: "Login Page", imageDescription: "Login Page/Home Page for the website."
         }, {
             imageAndDescId: 2,
-            image: P2n2input1, imageDescTitle: "Input Page", imageDescription: "User enters the required time duration and uploads the sales dataset."
+            image: P2n2input1, imageDescTitle: "Input Page - Empty", imageDescription: "User enters the required time duration and uploads the sales dataset in this page."
         }, {
             imageAndDescId: 3,
-            image: P2n3input2, imageDescTitle: "Input2 Page", imageDescription: "User enters the required time duration and uploads the sales dataset."
+            image: P2n3input2, imageDescTitle: "Input Page - Empty", imageDescription: "The available intervals for selection are Days, Weeks, Months and Years."
         },
         {
             imageAndDescId: 4,
-            image: P2n4input3, imageDescTitle: "Input3 Page", imageDescription: "User enters the required time duration and uploads the sales dataset."
+            image: P2n4input3, imageDescTitle: "Input Page - With filled data", imageDescription: "Now in the above example, the \"ds mod.csv\" is used for training the ML model and the results will be shown for 9 months from the last date entry in the dataset."
         },
         {
             imageAndDescId: 5,
@@ -134,7 +134,7 @@ function ProjectsList() {
         },
         {
             imageAndDescId: 6,
-            image: P2n6res2, imageDescTitle: "Result2 Page", imageDescription: "The prediction results are shown in form of graphs."
+            image: P2n6res2, imageDescTitle: "Result Page", imageDescription: "The main evaluation stats of the ML model are also shown, i.e., MSE, RMSE, MAPE. And the users could also download the predicted results in the form of a CSV."
         },
         {
             imageAndDescId: 7,
@@ -202,7 +202,7 @@ function ProjectsList() {
                             <button className={ProjectsListCSS.carouselItemNavBtnPrev} onClick={() => {
                                 updateIndex0(activeIndex0 - 1);
                             }}>
-                                <img src={MoveLeftIcon} alt="Move left" />
+                                <img src={MoveLeftIcon} alt="Move left" className={ProjectsListCSS.carouselItemNavBtnPrevIcon} />
                             </button>
                             <div className={ProjectsListCSS.currentCarouselItemIndicators}>
                                 {projectsList[0]["projectImagesAndDesc"].map((imageAndDesc, index) => {
@@ -210,9 +210,10 @@ function ProjectsList() {
                                         <div className={ProjectsListCSS.currentCarouselItemIndicatorBtn} key={index} onClick={() => {
                                             updateIndex0(index);
                                         }}>
-                                            <button className={index === activeIndex0 ? ProjectsListCSS.currentCarouselItemIndicatorsBtnActive : ProjectsListCSS.currentCarouselItemIndicatorsBtn}><span>
-                                                {index + 1}
-                                            </span>
+                                            <button className={index === activeIndex0 ? ProjectsListCSS.currentCarouselItemIndicatorsBtnActive : ProjectsListCSS.currentCarouselItemIndicatorsBtn}>
+                                                <div>
+                                                    {index + 1}
+                                                </div>
                                             </button>
                                         </div>
                                     )
@@ -221,7 +222,7 @@ function ProjectsList() {
                             <button className={ProjectsListCSS.carouselItemNavBtnNext} onClick={() => {
                                 updateIndex0(activeIndex0 + 1);
                             }}>
-                                <img src={MoveRightIcon} alt="Move right" />
+                                <img src={MoveRightIcon} alt="Move right" className={ProjectsListCSS.carouselItemNavBtnNextIcon} />
                             </button>
                         </div>
                     </div>
@@ -263,7 +264,7 @@ function ProjectsList() {
                             <button className={ProjectsListCSS.carouselItemNavBtnPrev} onClick={() => {
                                 updateIndex1(activeIndex1 - 1);
                             }}>
-                                <img src={MoveLeftIcon} alt="Move right" />
+                                <img src={MoveLeftIcon} alt="Move left" className={ProjectsListCSS.carouselItemNavBtnPrevIcon} />
                             </button>
                             <div className={ProjectsListCSS.currentCarouselItemIndicators}>
                                 {projectsList[1]["projectImagesAndDesc"].map((imageAndDesc, index) => {
@@ -271,9 +272,9 @@ function ProjectsList() {
                                         <div className={ProjectsListCSS.currentCarouselItemIndicatorBtn} key={index} onClick={() => {
                                             updateIndex1(index);
                                         }}>
-                                            <button className={index === activeIndex1 ? ProjectsListCSS.currentCarouselItemIndicatorsBtnActive : ProjectsListCSS.currentCarouselItemIndicatorsBtn}><span>
+                                            <button className={index === activeIndex1 ? ProjectsListCSS.currentCarouselItemIndicatorsBtnActive : ProjectsListCSS.currentCarouselItemIndicatorsBtn}>
                                                 {index + 1}
-                                            </span></button>
+                                            </button>
                                         </div>
                                     )
                                 })}
@@ -281,7 +282,7 @@ function ProjectsList() {
                             <button className={ProjectsListCSS.carouselItemNavBtnNext} onClick={() => {
                                 updateIndex1(activeIndex1 + 1);
                             }}>
-                                <img src={MoveRightIcon} alt="Move right" />
+                                <img src={MoveRightIcon} alt="Move right" className={ProjectsListCSS.carouselItemNavBtnNextIcon} />
                             </button>
                         </div>
                     </div>

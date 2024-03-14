@@ -2,12 +2,23 @@
 .contactPageContainerDiv {
   margin-left: 12%;
   margin-top: 10%;
-  margin-bottom: 400px;
+  margin-bottom: 360px;
+}
+
+.email {
+  font-size: 25px;
+  color: #7cb9e8;
+  margin-left: 20px;
+}
+
+.linkedIn,.gitHub{
+  color: #7cb9e8;
 }
 
 .findMeOnContentDiv {
   display: flex;
   flex-direction: row;
+  margin: 50px 0;
   width: 100%;
   align-items: flex-start;
   justify-content: space-evenly;
@@ -33,22 +44,22 @@
 }
 
 .getInTouchContentDiv {
-  margin-top: 20px;
+  margin-top: 50px;
   margin-left: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .subHeadingDiv {
+  color: #0094ff;
   font-size: 35px;
   font-family: "Inter", sans-serif;
 }
 
 /* Tags */
 a {
-  color: #000;
   cursor: pointer;
   font-family: "Inter", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
   margin: 0;
   padding: 0;

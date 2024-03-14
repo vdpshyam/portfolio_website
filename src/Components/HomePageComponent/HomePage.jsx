@@ -14,7 +14,7 @@ function HomePage() {
                 <HomePageIntro />
             </div>
             <div className={HomePageCSS.homePageParaDiv}>
-                <p>Have a look at some of my projects below...</p>
+                <p className={HomePageCSS.homePageHelperText}>Have a look at some of my projects below...</p>
             </div>
         </div>
     );
