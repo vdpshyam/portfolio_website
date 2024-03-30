@@ -25,7 +25,7 @@ import P2n5res1 from '../../../Assets/Images/Projects/SalesForecating/P2n5res1.p
 import P2n6res2 from '../../../Assets/Images/Projects/SalesForecating/P2n6res2.png';
 import P2n7error1 from '../../../Assets/Images/Projects/SalesForecating/P2n7error1.png';
 
-function ProjectsList() {
+function ProjectsList({onMouseLeaveHandlerForChangingCustomCursor, onMouseEnterHandlerForChangingCustomCursor}) {
 
     const projectsList = [{
         projectId: 1,
@@ -164,6 +164,14 @@ function ProjectsList() {
         setActiveIndex1(newIndex);
     }
 
+    function onMouseEnterHandler(){
+        onMouseEnterHandlerForChangingCustomCursor();
+    }
+
+    function onMouseLeaveHandler(){
+        onMouseLeaveHandlerForChangingCustomCursor();
+    }
+
     return (
         <div className={ProjectsListCSS.projectsListDiv}>
             {/* projectId 1 */}
@@ -201,7 +209,7 @@ function ProjectsList() {
                         <div className={ProjectsListCSS.carouselItemBtn}>
                             <button className={ProjectsListCSS.carouselItemNavBtnPrev} onClick={() => {
                                 updateIndex0(activeIndex0 - 1);
-                            }}>
+                            }} onMouseEnter={() => onMouseEnterHandler()} onMouseLeave={() => onMouseLeaveHandler()}>
                                 <img src={MoveLeftIcon} alt="Move left" className={ProjectsListCSS.carouselItemNavBtnPrevIcon} />
                             </button>
                             <div className={ProjectsListCSS.currentCarouselItemIndicators}>
@@ -210,7 +218,7 @@ function ProjectsList() {
                                         <div className={ProjectsListCSS.currentCarouselItemIndicatorBtn} key={index} onClick={() => {
                                             updateIndex0(index);
                                         }}>
-                                            <button className={index === activeIndex0 ? ProjectsListCSS.currentCarouselItemIndicatorsBtnActive : ProjectsListCSS.currentCarouselItemIndicatorsBtn}>
+                                            <button className={index === activeIndex0 ? ProjectsListCSS.currentCarouselItemIndicatorsBtnActive : ProjectsListCSS.currentCarouselItemIndicatorsBtn} onMouseEnter={() => onMouseEnterHandler()} onMouseLeave={() => onMouseLeaveHandler()}>
                                                 <div>
                                                     {index + 1}
                                                 </div>
@@ -221,7 +229,7 @@ function ProjectsList() {
                             </div>
                             <button className={ProjectsListCSS.carouselItemNavBtnNext} onClick={() => {
                                 updateIndex0(activeIndex0 + 1);
-                            }}>
+                            }} onMouseEnter={() => onMouseEnterHandler()} onMouseLeave={() => onMouseLeaveHandler()}>
                                 <img src={MoveRightIcon} alt="Move right" className={ProjectsListCSS.carouselItemNavBtnNextIcon} />
                             </button>
                         </div>
@@ -263,7 +271,7 @@ function ProjectsList() {
                         <div className={ProjectsListCSS.carouselItemBtn}>
                             <button className={ProjectsListCSS.carouselItemNavBtnPrev} onClick={() => {
                                 updateIndex1(activeIndex1 - 1);
-                            }}>
+                            }} onMouseEnter={() => onMouseEnterHandler()} onMouseLeave={() => onMouseLeaveHandler()}>
                                 <img src={MoveLeftIcon} alt="Move left" className={ProjectsListCSS.carouselItemNavBtnPrevIcon} />
                             </button>
                             <div className={ProjectsListCSS.currentCarouselItemIndicators}>
@@ -272,7 +280,7 @@ function ProjectsList() {
                                         <div className={ProjectsListCSS.currentCarouselItemIndicatorBtn} key={index} onClick={() => {
                                             updateIndex1(index);
                                         }}>
-                                            <button className={index === activeIndex1 ? ProjectsListCSS.currentCarouselItemIndicatorsBtnActive : ProjectsListCSS.currentCarouselItemIndicatorsBtn}>
+                                            <button className={index === activeIndex1 ? ProjectsListCSS.currentCarouselItemIndicatorsBtnActive : ProjectsListCSS.currentCarouselItemIndicatorsBtn} onMouseEnter={() => onMouseEnterHandler()} onMouseLeave={() => onMouseLeaveHandler()}>
                                                 {index + 1}
                                             </button>
                                         </div>
@@ -281,7 +289,7 @@ function ProjectsList() {
                             </div>
                             <button className={ProjectsListCSS.carouselItemNavBtnNext} onClick={() => {
                                 updateIndex1(activeIndex1 + 1);
-                            }}>
+                            }} onMouseEnter={() => onMouseEnterHandler()} onMouseLeave={() => onMouseLeaveHandler()}>
                                 <img src={MoveRightIcon} alt="Move right" className={ProjectsListCSS.carouselItemNavBtnNextIcon} />
                             </button>
                         </div>
