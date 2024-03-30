@@ -1,8 +1,7 @@
 import React from 'react';
+
 import ProjectsListCSS from './ProjectsList.module.css';
-// import ProjectsPageSingleProjectCarousel from '../ProjectsPageSingleProjectCarousel/ProjectsPageSingleProjectCarousel';
-// import ProjectsPageSingleProjectCarouselCSS from './ProjectsPageSingleProjectCarousel.module.css';
-// import ProjectsPageSingleProjectCarouselItem from '../ProjectsPageSingleProjectCarouselItem/ProjectsPageSingleProjectCarouselItem';
+
 import MoveLeftIcon from '../../../Assets/Icons/moveleft3.png';
 import MoveRightIcon from '../../../Assets/Icons/moveright3.png';
 

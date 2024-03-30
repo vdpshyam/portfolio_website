@@ -3,8 +3,6 @@ import NavBarCSS from './NavBar.module.css'
 import switchThemeIcon from '../../Assets/Images/switchThemeIcon.png';
 import logo from '../../Assets/Images/logo4.png';
 
-// const image = '../../Assets/Images/switchThemeIcon.png';
-
 function NavBar({ handleNavBarClicksFunc, onMouseLeaveHandlerForChangingCustomCursor, onMouseEnterHandlerForChangingCustomCursor }) {
 
     function onLogoClick() {
