@@ -11,20 +11,27 @@ h3 {
   color: white;
 }
 
+button,a {
+  cursor: none;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
+  cursor: none;
 }
 
 ::-webkit-scrollbar-track {
   background: transparent;
+  cursor: none;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #2121f8;
+  cursor: none;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #1b1ba4;
-  cursor: pointer;
+  cursor: none;
 }

@@ -5,7 +5,7 @@ import logo from '../../Assets/Images/logo4.png';
 
 // const image = '../../Assets/Images/switchThemeIcon.png';
 
-function NavBar({ handleNavBarClicksFunc }) {
+function NavBar({ handleNavBarClicksFunc, onMouseLeaveHandlerForChangingCustomCursor, onMouseEnterHandlerForChangingCustomCursor }) {
 
     function onLogoClick() {
         window.location.reload();
@@ -13,6 +13,14 @@ function NavBar({ handleNavBarClicksFunc }) {
 
     function onNavClick(sectionId) {
         handleNavBarClicksFunc(sectionId);
+    }
+
+    function onMouseEnterHandler(){
+        onMouseEnterHandlerForChangingCustomCursor();
+    }
+
+    function onMouseLeaveHandler(){
+        onMouseLeaveHandlerForChangingCustomCursor();
     }
 
     return (
@@ -23,9 +31,9 @@ function NavBar({ handleNavBarClicksFunc }) {
                 </div>
                 <div className={NavBarCSS.navBarNavigations}>
                     <img src={switchThemeIcon} alt="" className={NavBarCSS.switchThemeIcon} />
-                    <button className={NavBarCSS.navigateTo} onClick={() => onNavClick('projectsPageDiv')}>Projects</button>
-                    <button className={NavBarCSS.navigateTo} onClick={() => onNavClick('aboutPageDiv')}>About</button>
-                    <button className={NavBarCSS.navigateTo} onClick={() => onNavClick('contactPageDiv')}>Contact</button>
+                    <button className={NavBarCSS.navigateTo} onClick={() => onNavClick('projectsPageDiv')} onMouseEnter={() => onMouseEnterHandler()} onMouseLeave={() => onMouseLeaveHandler()}>Projects</button>
+                    <button className={NavBarCSS.navigateTo} onClick={() => onNavClick('aboutPageDiv')} onMouseEnter={() => onMouseEnterHandler()} onMouseLeave={() => onMouseLeaveHandler()}>About</button>
+                    <button className={NavBarCSS.navigateTo} onClick={() => onNavClick('contactPageDiv')} onMouseEnter={() => onMouseEnterHandler()} onMouseLeave={() => onMouseLeaveHandler()}>Contact</button>
                 </div>
             </div>
         </div>

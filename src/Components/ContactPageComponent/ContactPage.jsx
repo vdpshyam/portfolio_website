@@ -1,7 +1,16 @@
 import React from 'react';
 import ContactPageCSS from './ContactPage.module.css';
 
-function ContactPage() {
+function ContactPage({ onMouseEnterHandlerForChangingCustomCursor, onMouseLeaveHandlerForChangingCustomCursor }) {
+
+    function onMouseEnterHandler() {
+        onMouseEnterHandlerForChangingCustomCursor();
+    }
+
+    function onMouseLeaveHandler() {
+        onMouseLeaveHandlerForChangingCustomCursor();
+    }
+
     return (
         <div className={ContactPageCSS.contactPageContainerDiv}>
             <div className={ContactPageCSS.findMeOnDiv}>
@@ -9,11 +18,11 @@ function ContactPage() {
                     Find me on:
                 </p>
                 <div className={ContactPageCSS.findMeOnContentDiv}>
-                    <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/v-d-p-shyam-9b6ba3162/'> <p className={ContactPageCSS.linkedIn}>
+                    <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/v-d-p-shyam-9b6ba3162/' onMouseEnter={() => onMouseEnterHandler()} onMouseLeave={() => onMouseLeaveHandler()}> <p className={ContactPageCSS.linkedIn}>
                         LinkedIn
                     </p>
                     </a>
-                    <a className={ContactPageCSS.gitHub} target="_blank" rel="noreferrer" href='https://github.com/vdpshyam'>
+                    <a className={ContactPageCSS.gitHub} target="_blank" rel="noreferrer" href='https://github.com/vdpshyam' onMouseEnter={() => onMouseEnterHandler()} onMouseLeave={() => onMouseLeaveHandler()}>
                         <p className={ContactPageCSS.gitHub}>
                             GitHub
                         </p>

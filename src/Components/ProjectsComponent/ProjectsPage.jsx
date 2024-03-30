@@ -3,7 +3,7 @@ import ProjectsPageCSS from './ProjectsPage.module.css';
 // import ProjectsCarousel from './ProjectsCarousel/ProjectsCarousel';
 import ProjectsList from './ProjectsListComponent/ProjectsList'
 
-function ProjectsPage() {
+function ProjectsPage({ onMouseEnterHandlerForChangingCustomCursor, onMouseLeaveHandlerForChangingCustomCursor }) {
     return (
         <div>
             <div className={ProjectsPageCSS.projectsPageDiv}>
@@ -14,7 +14,7 @@ function ProjectsPage() {
                     Note: These are not the only projects that I have done, these are either my personal projects or the only projects that I can publicly showcase with the approval from my client.
                 </p> */}
                 {/* <ProjectsCarousel /> */}
-                <ProjectsList />
+                <ProjectsList onMouseEnterHandlerForChangingCustomCursor={ onMouseEnterHandlerForChangingCustomCursor } onMouseLeaveHandlerForChangingCustomCursor={ onMouseLeaveHandlerForChangingCustomCursor }/>
             </div>
         </div>
     );
